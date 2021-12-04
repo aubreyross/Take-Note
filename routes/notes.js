@@ -11,47 +11,50 @@ api.get('/', (req, res) => {
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-//POST route to create note 
+
+// POST route to create note
 api.post('/', (req, res) => {
+  console.log(req.body);
+  
+  const noteContent = {
+    title: req.body.title,
+    text: req.body.text,
+    id: uuidv4(),
+  }; 
+  
+  try {
 
-    const noteContent = {
-        title: req.body.title,
-        text: req.body.text,
-        id: uuidv4(),
-    };
-    
-    try {
+    readFromFile(file, 'utf8', (err, jsonStr) => {
+      if (err) {
+        res.error("Could not create note", err);
+          return;
+      
+      } else {
+  	
+		readAndAppend(noteContent, './db/db.json');
+		    res.json(`Succesful note`);
+          
+      }});
 
-        readFromFile(file, 'utf8', (err, jsonStr) => {
-          if (err) {
-            res.error("Could not create note", err);
-              return;
-          
-          } else {
-          
-            readAndAppend(noteContent, './db/db.json');
-                res.json("Succesful note created");
-              
-          }});
-    
-      } catch (err) {
-        throw err;
-      }
-    
+  } catch (err) {
+    throw err;
+  }
+
 })
+
 
 //DELETE route to delete selected note
 api.delete('/:id', (req, res) => {
-    const noteId = req.params.id;
-    readFromFile('./db/db.json')
-    .then((data) => JSON.parse(data))
-    .then((json) => {
+  const noteId = req.params.id;
+      readFromFile('./db/db.json')
+      .then((data) => JSON.parse(data))
+      .then((json) => {
 
         const result = json.filter((note) => note.id !== noteId);
         writeToFile('./db/db.json', result);
-        res.json("Note deleted");
-    });
-    
+        res.json(`Deleted!`);
+  });
 });
+
 
 module.exports = api;

@@ -1,6 +1,27 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text",
+        "title": "Master Javascript",
+        "text": "TODAY.",
+        "id": "ab9b95d0-178c-4276-9127-16bc81c6d163"
+    },
+    {
+        "title": "Master Javascript some more.",
+        "text": "Today.",
+        "id": "aeaa9624-a190-41bf-9f21-6e151cf35dc7"
+    },
+    {
+        "title": "Master Python",
+        "text": "again.",
+        "id": "3e916b8b-7610-4d96-afdb-04e391e8c9b2"
+    },
+    {
+        "title": "Drink XXL Coffee",
+        "text": "and another one.",
+        "id": "0231cad9-ffa3-4ecc-9dd9-43885f5eb73b"
+    },
+    {
+        "title": "Take out trash.",
+        "text": "no excuses.",
+        "id": "872ff6ec-3eaf-4b4a-ad76-19128bbeb587"
     }
 ]

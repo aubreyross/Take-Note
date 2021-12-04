@@ -27,7 +27,7 @@ app.use(clog);
 app.use ('/api', apiRouter);
 
 
-// GET Routes to indicate location to provide files on our server's filesystem
+// GET Routes to indicate where we're going to provide files and their location on our server's filesystem
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/index.html')));
 
 //Home page
