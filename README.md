@@ -21,7 +21,9 @@ Take Note is an application designed for note-taking, organizing, and task manag
 * Heroku: 
 
 ## Preview
+![NoteTaker2](https://user-images.githubusercontent.com/87405979/144702187-21156b63-4a45-461d-9b73-a7d655646d75.jpg)
 
+![Notes](https://user-images.githubusercontent.com/87405979/144702237-0ee88f9b-517f-4d42-82b4-4bfa099241c7.jpg)
 
 ## Resources
 * Student Activity 28, 11-Express
