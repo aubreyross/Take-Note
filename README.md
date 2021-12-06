@@ -17,8 +17,8 @@ Take Note is an application designed for note-taking, organizing, and task manag
 * npm 
 
 ## Links
-* Code:
-* Heroku: 
+* Code: https://github.com/aubreyross/Take-Note
+* Heroku: https://take-notez.herokuapp.com/
 
 ## Preview
 ![NoteTaker2](https://user-images.githubusercontent.com/87405979/144702187-21156b63-4a45-461d-9b73-a7d655646d75.jpg)
